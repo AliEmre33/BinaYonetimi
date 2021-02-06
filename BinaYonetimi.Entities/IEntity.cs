@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BinaYonetimi.Entities
 {
-    public class Class1
+    public interface IEntity
     {
     }
 }
