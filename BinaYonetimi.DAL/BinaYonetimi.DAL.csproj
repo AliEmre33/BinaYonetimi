@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,17 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helper.cs" />
-    <Compile Include="IKullaniciDAL.cs" />
-    <Compile Include="IRepository.cs" />
-    <Compile Include="KullaniciDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BinaYonetimi.Entitires\BinaYonetimi.Entities.csproj">
-      <Project>{d0094e1b-c89d-45c0-8f09-3ad258a015fd}</Project>
-      <Name>BinaYonetimi.Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
