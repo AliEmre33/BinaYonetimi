@@ -25,7 +25,7 @@ namespace BinaYonetimi.Business.Entities
         public string sifre { get; set; }
         public string tipAdı { get; set; }
 
-
+        //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
 
