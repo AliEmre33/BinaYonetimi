@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaYonetimi.Business", "Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaYonetimi.DAL", "BinaYonetimi.DAL\BinaYonetimi.DAL.csproj", "{1C4FC81E-1D0A-4A9D-A483-CA8525F539C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaYonetimi.Entities", "BinaYonetimi.Entities\BinaYonetimi.Entities.csproj", "{9909C2AF-FEFF-4E11-957C-C7ABF7A62B9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1C4FC81E-1D0A-4A9D-A483-CA8525F539C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C4FC81E-1D0A-4A9D-A483-CA8525F539C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C4FC81E-1D0A-4A9D-A483-CA8525F539C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9909C2AF-FEFF-4E11-957C-C7ABF7A62B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9909C2AF-FEFF-4E11-957C-C7ABF7A62B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9909C2AF-FEFF-4E11-957C-C7ABF7A62B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9909C2AF-FEFF-4E11-957C-C7ABF7A62B9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
