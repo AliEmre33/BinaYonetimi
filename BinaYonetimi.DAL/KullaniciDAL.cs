@@ -9,6 +9,7 @@ namespace BinaYonetimi.DAL
 {
     public class KullaniciDAL : IKullaniciDAL
     {
+        //açıklama ekledim
         public int Delete(int ID)
         {
             throw new NotImplementedException();
