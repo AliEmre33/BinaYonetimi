@@ -42,11 +42,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnketDAL.cs" />
+    <Compile Include="AnketSonucDAL.cs" />
+    <Compile Include="AnketSoruDAL.cs" />
+    <Compile Include="ApartmanDAL.cs" />
+    <Compile Include="DaireSakiniDAL.cs" />
+    <Compile Include="DuyuruDAL.cs" />
+    <Compile Include="GuvenlikDAL.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="IAnketDAL.cs" />
+    <Compile Include="IAnketSonucDAL.cs" />
+    <Compile Include="IAnketSoruDAL.cs" />
+    <Compile Include="IApartmanDAL.cs" />
+    <Compile Include="IDaireSakiniDAL.cs" />
+    <Compile Include="IDuyuruDAL.cs" />
+    <Compile Include="IGuvenlikDAL.cs" />
     <Compile Include="IKullaniciDAL.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="IUyeDal.cs" />
+    <Compile Include="IYoneticiDAL.cs" />
     <Compile Include="KullaniciDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyeDAL.cs" />
+    <Compile Include="YoneticiDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BinaYonetimi.Entities\BinaYonetimi.Entities.csproj">

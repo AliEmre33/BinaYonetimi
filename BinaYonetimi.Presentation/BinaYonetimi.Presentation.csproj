@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmApartmanSakini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApartmanSakini.Designer.cs">
+      <DependentUpon>frmApartmanSakini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciGirisBilgileriGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciGirisBilgileriGuncelleme.Designer.cs">
+      <DependentUpon>frmKullaniciGirisBilgileriGuncelleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmApartmanSakini.resx">
+      <DependentUpon>frmApartmanSakini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciGirisBilgileriGuncelleme.resx">
+      <DependentUpon>frmKullaniciGirisBilgileriGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

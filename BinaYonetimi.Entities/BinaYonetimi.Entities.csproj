@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anket.cs" />
+    <Compile Include="AnketSonuc.cs" />
+    <Compile Include="AnketSoru.cs" />
+    <Compile Include="Apartman.cs" />
+    <Compile Include="DaireSakini.cs" />
+    <Compile Include="Duyuru.cs" />
+    <Compile Include="Guvenlik.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Kullanici.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uye.cs" />
+    <Compile Include="Yonetici.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
