@@ -33,11 +33,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(302, 132);
+            this.button1.Location = new System.Drawing.Point(302, 175);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 49);
             this.button1.TabIndex = 2;
@@ -76,11 +77,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Kullanıcı Adı:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label4.Location = new System.Drawing.Point(291, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 25);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Şifre Değiştir";
+            // 
             // frmYoneticiLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 197);
+            this.ClientSize = new System.Drawing.Size(435, 236);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }
