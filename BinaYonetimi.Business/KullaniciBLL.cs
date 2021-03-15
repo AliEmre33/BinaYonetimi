@@ -19,7 +19,7 @@ namespace BinaYonetimi.Business
             {
                 durum = kullaniciDAL.kullaniciLogin(kullaniciAdi, sifre);
             }
-            return durum;
+            return durum;//aaaaaaaaaaaaaaaaaaaaaaa
         }
 
     }
