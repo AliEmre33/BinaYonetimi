@@ -28,7 +28,5 @@ namespace BinaYonetimi.Entities
             get { return anketKonusu; }
             set { anketKonusu = value; }
         }
-
-
     }
 }

@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>BinaYonetimi.Presentation</RootNamespace>
     <AssemblyName>BinaYonetimi.Presentation</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FakeData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FakeData.1.0.0\lib\FakeData.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -107,7 +111,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,6 +126,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BinaYonetimi.Business\BinaYonetimi.Business.csproj">
+      <Project>{f2d2f8ca-baa0-4e4f-bce5-e215930ca591}</Project>
+      <Name>BinaYonetimi.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BinaYonetimi.DAL\BinaYonetimi.DAL.csproj">
+      <Project>{1c4fc81e-1d0a-4a9d-a483-ca8525f539c0}</Project>
+      <Name>BinaYonetimi.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BinaYonetimi.Entities\BinaYonetimi.Entities.csproj">
+      <Project>{9909c2af-feff-4e11-957c-c7abf7a62b9d}</Project>
+      <Name>BinaYonetimi.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

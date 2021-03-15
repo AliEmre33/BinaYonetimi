@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace BinaYonetimi.DAL
 {
-    public interface IAracDAL : IRepository<Arac>
+   public  interface IAracDAL:IRepository<Arac>
     {
+
+
+
     }
 }

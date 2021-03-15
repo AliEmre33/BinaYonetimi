@@ -57,6 +57,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "Çıkış Yap";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -148,7 +149,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1066, 435);
+            this.tabPage2.Size = new System.Drawing.Size(981, 437);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Kişisel Bilgiler";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -158,7 +159,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1066, 435);
+            this.tabPage3.Size = new System.Drawing.Size(981, 437);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Apartman Bilgileri";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -168,7 +169,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1066, 435);
+            this.tabPage4.Size = new System.Drawing.Size(981, 437);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Mesajlar";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -178,7 +179,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1066, 435);
+            this.tabPage5.Size = new System.Drawing.Size(981, 437);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Duyuru Oluştur";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -188,7 +189,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1066, 435);
+            this.tabPage6.Size = new System.Drawing.Size(981, 437);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Anket Hazırla";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -198,7 +199,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1066, 435);
+            this.tabPage7.Size = new System.Drawing.Size(981, 437);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Anket Sonuç";
             this.tabPage7.UseVisualStyleBackColor = true;

@@ -8,9 +8,34 @@ namespace BinaYonetimi.Entities
 {
     public class Kullanici : IEntity
     {
-        public enum KullaniciTip { Yonetici, BinaSakini }
-        public enum Cinsiyet { Erkek, Kadın }
-        public enum MedeniDurum { Evli, Bekar }
+        private bool kullaniciTip;
+
+        public bool KullaniciTip
+
+        {
+            get { return kullaniciTip; }
+            set { kullaniciTip = value; }
+        }
+
+        private bool cinsiyet;
+
+        public bool Cinsiyet
+        {
+            get { return cinsiyet; }
+            set { cinsiyet = value; }
+        }
+
+        private bool medeniDurum;
+
+        public bool MedeniDurum
+        {
+            get { return medeniDurum; }
+            set { medeniDurum = value; }
+        }
+
+
+
+
 
         private int id;
         public int ID
@@ -19,7 +44,7 @@ namespace BinaYonetimi.Entities
             set { id = value; }
         }
 
-        public KullaniciTip kullaniciTip { get; set; }
+    
 
         private int yas;
         public int Yas
@@ -29,7 +54,7 @@ namespace BinaYonetimi.Entities
         }
 
         private DateTime dogumTarihi;
-        public DateTime MyProperty
+        public DateTime DogumTarihi
         {
             get { return dogumTarihi; }
             set { dogumTarihi = value; }
@@ -56,8 +81,6 @@ namespace BinaYonetimi.Entities
             set { telefon = value; }
         }
 
-        public Cinsiyet _Cinsiyet{ get; set; }
-        public MedeniDurum _MedeniDurum{ get; set; }
 
         private string kullaniciAdi;
         public string KullaniciAdi
@@ -69,8 +92,28 @@ namespace BinaYonetimi.Entities
         private string sifre;
         public string Sifre
         {
-            get { return  sifre; }
+            get { return sifre; }
             set { string sifre = value; }
         }
+
+        private int apartmanID;
+
+        public int ApartmanID
+        {
+            get { return apartmanID; }
+            set { apartmanID = value; }
+        }
+
+
+        private string mailAdresi;
+
+        public string MailAdresi
+        {
+            get { return mailAdresi; }
+            set { mailAdresi = value; }
+        }
+
+
+
     }
 }

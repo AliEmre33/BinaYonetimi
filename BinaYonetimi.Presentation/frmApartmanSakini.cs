@@ -16,5 +16,12 @@ namespace BinaYonetimi.Presentation
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin frmLogin = (frmLogin)Application.OpenForms["frmLogin"];
+            frmLogin.Show();
+        }
     }
 }

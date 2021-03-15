@@ -7,7 +7,7 @@ using BinaYonetimi.Entities;
 
 namespace BinaYonetimi.DAL
 {
-    public class GelenMesajDAL : IGelenMeajDAL
+    public class GelenMesajDAL : IGelenMesajDAL
     {
         public int Delete(int ID)
         {

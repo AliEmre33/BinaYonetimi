@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace BinaYonetimi.DAL
 {
-    public interface IAidatDAL : IRepository<Aidat>
+   public  interface IAidatDAL : IRepository<Aidat>
     {
+
+
+
     }
 }

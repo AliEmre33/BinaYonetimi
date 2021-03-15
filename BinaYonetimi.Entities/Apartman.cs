@@ -50,11 +50,8 @@ namespace BinaYonetimi.Entities
             set { daireSayisi = value; }
         }
 
-        private double aidat;
-        public double Aidat
-        {
-            get { return aidat; }
-            set { aidat = value; }
-        }
+
+        
+
     }
 }

@@ -23,7 +23,7 @@ namespace BinaYonetimi.Entities
         }
 
         private string sifre;
-        public string MyProperty
+        public string Sifre
         {
             get { return sifre; }
             set { sifre = value; }
