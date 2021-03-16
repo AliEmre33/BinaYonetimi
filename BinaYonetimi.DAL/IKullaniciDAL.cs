@@ -9,7 +9,7 @@ namespace BinaYonetimi.DAL
 {
     public interface IKullaniciDAL : IRepository<Kullanici>
     {
-        int kullaniciLogin(string kullaniciAdi, string sifre);
+        Kullanici kullaniciLogin(string kullaniciAdi, string sifre);
 
 
     }

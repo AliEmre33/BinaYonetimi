@@ -1,4 +1,5 @@
 ﻿using BinaYonetimi.Business;
+using BinaYonetimi.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,12 +18,13 @@ namespace BinaYonetimi.Presentation
         {
             InitializeComponent();
         }
+        public Kullanici kullanici = null;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int durum = KullaniciBLL.kullaniciLogin(textBox1.Text,textBox2.Text);
+             kullanici = KullaniciBLL.kullaniciLogin(textBox1.Text,textBox2.Text);
 
-            if (durum>0)
+            if (kullanici !=null)
             {
                 MessageBox.Show("Giriş Başarılı");
                 frmApartmanSakini apartmanSakini = new frmApartmanSakini();

@@ -21,10 +21,10 @@ namespace BinaYonetimi.DAL
             throw new NotImplementedException();
         }
 
-        public int kullaniciLogin(string kullaniciAdi, string sifre)
+        public Kullanici kullaniciLogin(string kullaniciAdi, string sifre)
         {
 
-            int durum = 0;
+            
 
             Kullanici kullanici = null;
 
@@ -51,29 +51,38 @@ namespace BinaYonetimi.DAL
                     while (reader.Read())
                     {
                         kullanici = new Kullanici();
+
+                        kullanici.ID = Convert.ToInt32(reader["kullaniciID"]);
+                        kullanici.Yas = Convert.ToInt32(reader["yas"]);
+                        kullanici.AD = reader["isim"].ToString();
+                        kullanici.Soyad = reader["soyisim"].ToString();
+                        
                         kullanici.KullaniciAdi = reader["kullanici_adi"].ToString();
+                        kullanici.Sifre = reader["sifre"].ToString();
+                        kullanici.MedeniDurum = Convert.ToBoolean(reader["medenidurum"]);
+                        kullanici.DogumTarihi = Convert.ToDateTime(reader["dogumTarihi"]);
+
+                        kullanici.Cinsiyet = Convert.ToBoolean(reader["cinsiyet"]);
+                        kullanici.MailAdresi = reader["mailAdresi"].ToString();
+                        kullanici.Telefon = Convert.ToInt32(reader["telefon"]);
+                        kullanici.ApartmanID = Convert.ToInt32(reader["ApartmanID"]);
+                        kullanici.KullaniciTip = Convert.ToBoolean(reader["tipadi"]);
+
+
                     }
                 }
                 reader.Close();
                 Helper.ConnectionOpenClose();
 
-                if (kullanici !=null)
-                {
-                    durum = 1;
-                }
-
-                else
-                {
-                    durum = 0;
-                }
+              
             }
             catch (Exception)
             {
-
-                durum = 0;
+                kullanici = null;
+               
                 
             }
-            return durum;
+            return kullanici;
 
 
         }

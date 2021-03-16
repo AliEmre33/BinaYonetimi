@@ -1,4 +1,5 @@
 ﻿using BinaYonetimi.DAL;
+using BinaYonetimi.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,15 @@ namespace BinaYonetimi.Business
        static KullaniciDAL kullaniciDAL = new KullaniciDAL();
 
 
-        public static int kullaniciLogin(string kullaniciAdi, string sifre)
+        public static Kullanici kullaniciLogin(string kullaniciAdi, string sifre)
         {
-            int durum = 0;
+            Kullanici kullanici = null;
+            
             if (kullaniciAdi!="" && sifre!="")
             {
-                durum = kullaniciDAL.kullaniciLogin(kullaniciAdi, sifre);
+                 kullanici = kullaniciDAL.kullaniciLogin(kullaniciAdi, sifre);
             }
-            return durum;//aaaaaaaaaaaaaaaaaaaaaaa
+            return kullanici;
         }
 
     }

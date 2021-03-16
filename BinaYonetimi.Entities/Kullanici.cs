@@ -93,7 +93,7 @@ namespace BinaYonetimi.Entities
         public string Sifre
         {
             get { return sifre; }
-            set { string sifre = value; }
+            set {  sifre = value; }
         }
 
         private int apartmanID;
